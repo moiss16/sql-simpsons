@@ -1,0 +1,22 @@
+{
+  "name": "desktop-app",
+  "version": "1.0.0",
+  "description": "Simple app",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerardo02/desktop-app.git"
+  },
+  "author": "Gerardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerardo02/desktop-app/issues"
+  },
+  "homepage": "https://github.com/Gerardo02/desktop-app#readme",
+  "devDependencies": {
+    "electron": "^7.0.1"
+  }
+}

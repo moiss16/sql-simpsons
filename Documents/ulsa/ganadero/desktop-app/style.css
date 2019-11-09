@@ -1,0 +1,84 @@
+body{
+    background-color: chartreuse;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.pixels-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    color: yellow;
+}
+header{
+    width: 100%;
+    background: rgb(216, 112, 147);
+}
+
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;   
+}
+/*header label :hover{
+    cursor: pointer;
+    background: rgb(170, 85, 113);
+} 
+----Creo que no hacen nada si los quitamos--- */
+
+.link-container ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.link-container li{
+    text-align: center;
+    flex-grow: 1;
+}
+.link-container li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.link-container li :hover{
+    background: rgb(170, 85, 113);
+}
+
+@media only screen and (max-width: 578px){
+    header label{
+        display: block;
+    }
+    header label img{
+        width: 28px;
+        height: 28px;
+        padding: 8px;
+        border-right: 1px solid #fff;
+        
+    }
+    .link-container{
+        position: absolute;
+        background: rgb(216, 112, 147);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .link-container ul{
+        flex-direction: column;
+    }
+    .link-container li{
+        text-align: left;
+    }
+    #btn-menu:checked ~ .link-container{
+        margin: 0;
+        
+    }
+    
+}
